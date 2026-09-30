@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f5f2;
+  color: #333;
+}
+
+/* Navigation Bar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #222;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h2 {
+  font-size: 24px;
+}
+
+nav div {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffb6c1;
+}
+
+/* Header */
+
+header {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ffe4ec, #f8d9e6);
+}
+
+header h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 22px;
+}
+
+/* Sections */
+
+section {
+  padding: 70px 10%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+section p {
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 1.7;
+}
+
+/* Skills */
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+#skills li {
+  background-color: #222;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 25px;
+}
+
+/* Education */
+
+#education h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* Contact */
+
+#contact {
+  background-color: #ffe4ec;
+}
+
+/* Footer */
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 50px 5%;
+  }
+
+}
